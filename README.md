@@ -1,24 +1,47 @@
-# README
+## Mailjet mailer
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Description
 
-Things you may want to cover:
+Simple Ruby on Rails app for email sending using Mailjet email delivery service. Made for students who study Ruby.
 
-* Ruby version
+Realized with:
 
-* System dependencies
+- Ruby 2.7.1
 
-* Configuration
+- Ruby on Rails 6.0.3
 
-* Database creation
+- SQLite 3
 
-* Database initialization
+Language: English.
 
-* How to run the test suite
+### Launching
 
-* Services (job queues, cache servers, search engines, etc.)
+1. Download or clone repo.
 
-* Deployment instructions
+2. Install all dependencies and prepare database:
 
-* ...
+```console
+$ bin/setup
+```
+
+3. Replace fake credentials in `.env` to your Mailjet credentials.
+
+4. Run app:
+
+```console
+$ foreman start
+```
+
+5. Open app on `http://localhost:5000`.
+
+### License
+
+MIT – see `LICENSE`
+
+### Contacts
+
+Email me at:
+
+```rb
+'dcdl-snotynu?fl`hk-bnl'.each_char.map(&:succ).join
+```
