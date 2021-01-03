@@ -12,4 +12,5 @@ gem "dotenv-rails"
 
 group :development do
   gem "foreman"
+  gem "letter_opener"
 end

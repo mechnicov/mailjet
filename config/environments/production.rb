@@ -18,4 +18,7 @@ Rails.application.configure do
   end
 
   config.active_record.dump_schema_after_migration = false
+
+  # Mailjet mailer
+  config.action_mailer.delivery_method = :mailjet
 end

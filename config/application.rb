@@ -14,6 +14,9 @@ module Mailjet
   class Application < Rails::Application
     config.load_defaults 6.0
     config.generators.system_tests = nil
-    config.action_mailer.delivery_method = :mailjet # do not use in dev mode!
+
+    # To use mailjet in dev mode switch off letter-opener
+    # in config/environments/development.rb and comment out this line:
+    # config.action_mailer.delivery_method = :mailjet
   end
 end
