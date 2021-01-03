@@ -5,6 +5,7 @@ class MessagesController < ApplicationController
     msg = Message.new(message_params)
 
     if msg.save
+      MessageMailer.send_email(email: msg.email, subject: msg.subject, body: msg.body).deliver_later
       flash[:success] = "OK"
     else
       flash[:fault] = "Not OK"
