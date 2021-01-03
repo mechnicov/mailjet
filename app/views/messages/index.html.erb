@@ -1,0 +1,28 @@
+<%= form_with(url: send_email_path, local: true, html: { class: "col s12" }) do |f| %>
+  <div class="row">
+    <div class="input-field col s12">
+      <i class="material-icons prefix">subject</i>
+      <%= f.text_field :subject, class: "validate", id: "subject", required: true %>
+      <%= f.label "Subject", for: "subject" %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <i class="material-icons prefix">mail_outline</i>
+      <%= f.email_field :email, class: "validate", id: "email", required: true %>
+      <%= f.label "Email", for: "email" %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <i class="material-icons prefix">mode_edit</i>
+      <%= f.text_area :body, class: "materialize-textarea validate", id: "body", required: true %>
+      <%= f.label "Message", for: "body" %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <button class="btn waves-effect waves-light pulse" type="submit">Send</button>
+    </div>
+  </div>  
+<% end %>
