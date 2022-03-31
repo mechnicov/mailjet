@@ -100,11 +100,11 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.14.1)
     netrc (0.11.0)
-    nio4r (2.5.2)
+    nio4r (2.5.8)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
     public_suffix (4.0.6)
-    puma (4.3.5)
+    puma (4.3.12)
       nio4r (~> 2.0)
     rack (2.2.3)
     rack-proxy (0.6.5)
@@ -175,7 +175,7 @@ DEPENDENCIES
   foreman
   letter_opener
   mailjet
-  puma (~> 4.1)
+  puma (~> 4.3)
   rails (~> 6.0.3, >= 6.0.3.1)
   sqlite3 (~> 1.4)
   webpacker (~> 4.0)
